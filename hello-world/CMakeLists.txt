@@ -1,5 +1,5 @@
 # project name
-project (hello-again)
+project (hello-world)
 
 # the oldest stable cmake version we support
 cmake_minimum_required (VERSION 2.6)
@@ -11,9 +11,9 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 
 # what to call that directory where we install data too
-set (PKGDATADIR "${DATADIR}/hello-again")
+set (PKGDATADIR "${DATADIR}/hello-world")
 
-set (EXEC_NAME "hello-again")
+set (EXEC_NAME "hello-world")
 set (RELEASE_NAME "A hello world.")
 set (VERSION "0.1")
 set (VERSION_INFO "whats up world")
@@ -38,7 +38,7 @@ ensure_vala_version("0.16" MINIMUM)
 # files we want to compile
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
-    src/hello-again.vala
+    src/hello-world.vala
 
 # tell what libraries to use when compiling
 PACKAGES
